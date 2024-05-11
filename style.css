@@ -33,18 +33,28 @@ body {
 }
 
 .search-elements input {
+  background-color: rgb(75, 75, 75);
   border-radius: 6px;
-  border: none;
+  /* border: none; */
+  border: 0.5px solid white;
+  color: white;
   outline: none;
   max-width: 400px;
   flex-grow: 1;
 }
 
+.search-elements input::placeholder {
+  color: white;
+}
+
 .fa-magnifying-glass {
-  background-color: rgb(255, 242, 242);
+  color: white !important;
+  background-color: black;
   padding: 12px 12px;
   margin-left: -12px;
-  border-left: 0.5px solid grey;
+  border-right: 0.5px solid white;
+  border-top: 0.5px solid white;
+  border-bottom: 0.5px solid white;
   cursor: pointer;
 }
 
@@ -52,4 +62,10 @@ body {
 
 .city-temperature-info img {
   width: 120px;
+}
+
+/* Weather Feature images */
+
+.feature-img {
+  width: 30px;
 }

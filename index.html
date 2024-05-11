@@ -23,21 +23,30 @@
 
   <body>
     <div class="main d-flex align-items-center justify-content-center p-3">
-      <div class="container text-light rounded-3 p-0 col-12 col-md-7 col-lg-4">
+      <div class="container text-light rounded-3 p-0 col-12 col-md-6 col-lg-4">
         <div
           class="search-elements rounded-3 d-flex align-items-center gap-2 p-3"
         >
           <input
+            id="searchBar"
             class="px-2 py-2"
             placeholder="Enter a city name..."
             type="search"
           />
 
-          <i class="fa-solid fa-magnifying-glass text-dark rounded-end"></i>
+          <i
+            onclick="search()"
+            class="fa-solid fa-magnifying-glass text-dark rounded-end"
+          ></i>
         </div>
 
         <div class="city-name mt-3 px-3">
-          <h3 class="display-6 text-center mb-4">Karachi</h3>
+          <h3
+            id="cityName"
+            class="display-6 text-center mb-4"
+          >
+            Karachi
+          </h3>
         </div>
 
         <div class="city-temperature-info text-center mt-4">
@@ -48,32 +57,84 @@
               alt=""
             />
           </div>
-          <h2 class="mb-4">33&deg;C</h2>
-          <h2 class="">
-            Clear <span class="max">34&deg;</span>/<span class="min"
-              >28&deg;</span
-            >
-          </h2>
+          <div class="d-flex justify-content-center">
+            <h2 id="weatherCondition">Clear - 33&deg;C</h2>
+          </div>
         </div>
 
         <div
           class="feels-like d-flex align-items-center justify-content-between px-3 mt-4"
         >
-          <h3 class="fw-light">Feels like</h3>
-          <h3 class="fw-light">35&deg;C</h3>
+          <div class="d-flex align-items-center justify-content-between gap-2">
+            <img
+              class="feature-img"
+              src="./imgs/weather-features/temperature.png"
+              alt=""
+            />
+            <h3 class="fw-light">Feels like</h3>
+          </div>
+          <h3
+            id="feelsLike"
+            class="fw-light"
+          >
+            35&deg;C
+          </h3>
         </div>
 
         <div
           class="humidity d-flex align-items-center justify-content-between px-3 mt-3"
         >
-          <h3 class="fw-light">Humidity</h3>
-          <h3 class="fw-light">73%</h3>
+          <div class="d-flex align-items-center justify-content-between gap-2">
+            <img
+              src="./imgs/weather-features/humidity.png"
+              alt=""
+              class="feature-img"
+            />
+            <h3 class="fw-light">Humidity</h3>
+          </div>
+          <h3
+            id="humidity"
+            class="fw-light"
+          >
+            73%
+          </h3>
+        </div>
+
+        <div
+          class="d-flex align-items-center justify-content-between px-3 mt-3"
+        >
+          <div class="d-flex align-items-center gap-2">
+            <img
+              src="./imgs/weather-features/wind (1).png"
+              alt=""
+              class="feature-img"
+            />
+            <h3 class="fw-light">Wind Speed</h3>
+          </div>
+          <h3
+            id="windSpeed"
+            class="fw-light"
+          >
+            5.4km/h
+          </h3>
         </div>
         <div
           class="visibility d-flex align-items-center justify-content-between px-3 mt-3"
         >
-          <h3 class="fw-light">Visibility</h3>
-          <h3 class="fw-light">6000m</h3>
+          <div class="d-flex align-items-center justify-content-between gap-2">
+            <img
+              src="./imgs/weather-features/eye (2).png"
+              alt=""
+              class="feature-img"
+            />
+            <h3 class="fw-light">Visibility</h3>
+          </div>
+          <h3
+            id="visibility"
+            class="fw-light"
+          >
+            6000m
+          </h3>
         </div>
       </div>
     </div>
